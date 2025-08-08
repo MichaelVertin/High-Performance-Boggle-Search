@@ -27,7 +27,7 @@ After processing `"programmers"`, the prefix set includes:
 The next word, `"programming"`, shares 8 of these prefixes. These 8 additions are redundant.
 
 ## Solution
-Instead of adding prefixes from the start of the word, iterate from the longest prefix to the shortest. Stop as soon as a prefix is found in the set.
+Instead of adding prefixes from the start of the word, iterate from the longest prefix to the shortest. Stop as soon as a prefix is found in the set. This restricts duplicate operations to one per word. 
 
 **Old approach:**
 ```python
@@ -98,4 +98,4 @@ For a 2×2 board, runtime dropped from 80–120 ms to 20–40 ms after adding th
 
 After winning the competition, the professor benchmarked this implementation against the next semester’s submissions. On a 6×6 board, it completed over 375% faster than the next fastest program, as shown below.
 
-[Performance graph placeholder: Insert chart comparing results]
+<img width="756" height="755" alt="image" src="https://github.com/user-attachments/assets/3cc8db55-968b-4f90-85e6-cf027d827f06" />
